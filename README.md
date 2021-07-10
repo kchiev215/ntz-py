@@ -33,7 +33,7 @@ using ntz' interface, or manually in the SQLite database (or YAML file).
 
 * TLDR
 
-    ```bash
+```bash
 echo "#!/usr/bin/env python3" | cat - ntz.py
 chmod +x ntz.py
 cp ./ntz.py /usr/local/bin/ntz.py
