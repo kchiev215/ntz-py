@@ -4,7 +4,6 @@
 * **Objective**
     * `ntz.py` is intended to be a note taker that can be interacted with through the command line.
     * `ntz.py` is a python command line note tool that allows users to read and write notes to and from `SQLite3`, `YAML`, or `JSON`
-* **Description**
 
 Keeping track of a small list of things to remember or stuff that needs doing is a pain. 
 Remembering its location, manually accessing it, formatting it and all of the clicking that entails, 
