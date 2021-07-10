@@ -31,7 +31,15 @@ using ntz' interface, or manually in the SQLite database (or YAML file).
 5. Execute the command below to reread the `.bashrc` file
     * `source ~/.bashrc`  
 
+* TLDR
 
+    ```bash
+echo "#!/usr/bin/env python3" | cat - ntz.py
+chmod +x ntz.py
+cp ./ntz.py /usr/local/bin/ntz.py
+echo "alias ntz='./ntz.py'" >> ~/.bashrc
+source ~/.bashrc
+```
 
 ## Usage
 
