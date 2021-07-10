@@ -1,7 +1,5 @@
 # add your code in this file
 import os
-import json
-
 
 # main function
 def cli():
