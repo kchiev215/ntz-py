@@ -55,9 +55,7 @@ source ~/.bashrc
 Typing `ntz` with no arguments should display all your notes. (Can you figure out how to send them to `more` or 
 `less` so you can see them one screen at a time?)
 
-```
-#!/usr/bin/env python3
-# cli - command line interface to ntz json file.
+## cli - command line interface to ntz json file.
 
 ### Showing notes.
 Typing `ntz` will display your notes.
