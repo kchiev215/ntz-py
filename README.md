@@ -55,5 +55,44 @@ source ~/.bashrc
 Typing `ntz` with no arguments should display all your notes. (Can you figure out how to send them to `more` or 
 `less` so you can see them one screen at a time?)
 
+```
+#!/usr/bin/env python3
+# cli - command line interface to ntz json file.
+
+### Showing notes.
+Typing `ntz` will display your notes.
+So will `ntz -l Shopping`
+
+### Saving notes
+Use [-r] for remember. Using [-r] on its own will save to the default ToDo category, like so:
+
+`$ ntz -r "my first note"`
+
+Using `-r` is the same as `ntz -c ToDo "my first note"
+
+Use the -c flag to create a new category or direct a note to an existing category, like this:
+
+`$ ntz -c Shopping "while out, get eggs"`
+
+### Removing notes
+Use [-f] for forget. [-f] requires a category and note number.
+
+To delete the note we made in the Shopping category (and also the category, because it will be empty) we can do:
+
+`$ ntz -f Shopping 1`
+
+### Editing notes
+Use [-e] for edit. This is more of a replacement then an edit.
+
+To replace our first note, we can do
+
+`$ ntz -e General 1 'my first note, edited'`
+
+### Clearing all notes
+
+`$ ntz clear`
+
+You will be prompted with a Y/N and given a chance to review your notes before they are deleted.
+
 
 
